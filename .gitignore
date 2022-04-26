@@ -1,4 +1,5 @@
 .cache/
 .parcel-cache/
 dist/
-yarn-debug.log*
+yarn-error.log*
+.vscode/
