@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Unna&display=swap');
+
+// Temp Stuff
+.Temp {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .TempFloofyLogo {
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3rem;
+        color: #fff;
+    }
+}
+
+// General Styling
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #2C2F33;
+}
+.hidden {
+    position: absolute;
+    top: -1000px;
+}
+
+// Navigation Styling
+.navigation {
+    padding: 1rem auto;
+    background-color: #23272A;
+    .navigation-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+
+        a {
+            padding: 5px 10px;
+            margin: 1rem 0.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1rem;
+        }
+    }
+}
+
+// Card Styling
+.card-background {
+    background-color: #23272A;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 1.6875rem;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: left;
+    background-color: #2C2F33;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    transition: opacity 1s ease 0s,transform 1s ease 0s;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: inherit;
+    padding: 2.875rem 3.375rem;
+    max-width: 100%;
+    width: 37rem;
+}
+
+.FloofyLogo {
+    max-width: 350px;
+    margin: 0.5rem 3rem;
+}
+
+.card-profiles {
+    max-width: 100%;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .card-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: #fff solid 1px;
+
+
+        .profile-pic {
+            max-width: 200px;
+            margin: 0 30px;
+            border-radius: 50%;
+        }
+
+        .profile-desc {
+            font-family: 'Ubuntu', sans-serif;
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+    }
+}
+
+.card-wrapper {
+    list-style: none;   
+    
+    .card-button {
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: #9b84ec;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    
+        a {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            font-family: 'Unna', serif;
+            color: #fff;
+        }
+    }
+}
+
+.card-socials {
+    width: 450px;
+    margin-bottom: 1.5rem;
+
+    .twitter-buttons {
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .twitter-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            color: #fff;
+
+            a {
+                padding: .5rem 1rem;
+                border-radius: 2rem;
+                background-color: #9b84ec;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+                text-decoration: none;
+                font-family: 'Unna', serif;
+                color: #fff;
+
+                span {
+                    margin-right: 4.5rem;
+                }
+            }
+        }
+    }
+}
+
+.card-support p, .card-contact h2 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card-support {
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    border-top: #fff solid 1px;
+    border-bottom: #fff solid 1px;
+
+    ul {
+        margin-bottom: 2rem;
+    }
+
+    div {
+        background-color: #37393e;
+        width: 450px;
+        margin-top: 1.5rem;
+        padding: 0 35px;
+        border-radius: 2.125rem;
+    }
+}
+
+.card-contact p {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}
