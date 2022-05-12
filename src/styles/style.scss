@@ -234,3 +234,56 @@ body {
     text-align: center;
     padding: 0.5rem;
 }
+
+@media only screen and (max-width: 736px) {
+    .card-container {
+        padding: 1rem;
+    }
+    
+    .card-profiles .card-profile {
+        border-bottom: none;
+
+        .profile-pic {
+            max-width: 11rem
+        }
+    }
+
+    .card-socials {
+        width: 100%;
+        
+        .twitter-buttons {
+            width: auto;
+
+            .twitter-button {
+                padding: 0 5px;
+            }
+
+            .twitter-button a span {
+                margin-right: 12vw;
+            }   
+        }
+
+        .twitter-buttons, .card-wrapper {
+            padding: 0 1.5rem;
+        }
+    }
+
+    .card-support, .card-support div {
+        width: auto;
+
+        .card-button a span {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .card-profiles .card-profile .profile-pic {
+        max-width: 7rem
+    }
+
+    .card-socials .twitter-buttons .twitter-button a span {
+                margin-right: 5px;
+    }   
+} 
