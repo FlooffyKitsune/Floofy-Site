@@ -1,6 +1,7 @@
 // TODO: Import Logos
 
 import React from "react";
+import "../../styles/navigation.scss"
 import { Link } from "react-router-dom";
 
 function Navigation(props) {

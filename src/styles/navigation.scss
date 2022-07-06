@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Unna&display=swap');
+
+// General Styling
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #2C2F33;
+}
+.hidden {
+    position: absolute;
+    top: -1000px;
+}
+
+// Navigation Styling
+.navigation {
+    padding: 1rem auto;
+    background-color: #23272A;
+    .navigation-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+
+        a {
+            padding: 5px 10px;
+            margin: 1rem 0.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1rem;
+        }
+    }
+}

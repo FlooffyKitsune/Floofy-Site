@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/home.scss"
 import Navigation from "../components/Navigation";
 import FloofyLogo from "../../images/svg/FloofyLogo.svg";
 

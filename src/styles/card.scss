@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Unna&display=swap');
 
-// Temp Stuff
-.Temp {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-    .TempFloofyLogo {
-        width: 30%;
-        margin-bottom: 3rem;
-    }
-
-    h2 {
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 3rem;
-        color: #fff;
-    }
-}
-
 // General Styling
 * {
     padding: 0;
@@ -37,26 +15,6 @@ body {
 .hidden {
     position: absolute;
     top: -1000px;
-}
-
-// Navigation Styling
-.navigation {
-    padding: 1rem auto;
-    background-color: #23272A;
-    .navigation-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-
-        a {
-            padding: 5px 10px;
-            margin: 1rem 0.5rem;
-            color: #fff;
-            text-decoration: none;
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 1rem;
-        }
-    }
 }
 
 // Card Styling

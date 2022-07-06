@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/card.scss"
 import FloofyLogo from "../../images/svg/FloofyLogo.svg";
 import wafflecat from "../../images/wafflecat.png";
 import floofy from "../../images/floofy.png";
