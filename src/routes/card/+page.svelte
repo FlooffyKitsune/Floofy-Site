@@ -5,6 +5,7 @@
     import FaYoutube from '~icons/fa/youtube';
     import FaHeart from '~icons/fa/heart';
     import SiKofi from '~icons/simple-icons/kofi';
+    import SiDiscord from '~icons/simple-icons/discord'
 </script>
 
 <main>
@@ -80,9 +81,12 @@
                     </div>
                     </div>
                     <div class="card-contact">
-                    <h2>Contact Me</h2>
-                    <p>wafflekat1123@gmail.com</p>
-                    <p>WaffleCat#0101</p>
+                        <h2>Contact Me</h2>
+                        <a href="mailto: flooffykitsune@proton.me">flooffykitsune@proton.me</a>
+                        <div>
+                            <SiDiscord />
+                            <p>wafflecat</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,11 +278,26 @@
         }
     }
 
-    .card-contact p {
+    .card-contact{
         font-family: 'Ubuntu', sans-serif;
         color: #fff;
         text-align: center;
         padding: 0.5rem;
+
+        a {
+            color: #fff;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+
+            p {
+                margin-left: 0.5rem;
+            }
+        }
     }
 
     @media only screen and (max-width: 736px) {
