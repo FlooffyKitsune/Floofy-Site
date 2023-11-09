@@ -205,6 +205,10 @@
                 color: #fff;
             }
         }
+
+        .card-button:hover {
+            background-color: #7965c9;
+        }
     }
 
     .card-socials {
@@ -243,6 +247,10 @@
                     span {
                         margin-right: 4.5rem;
                     }
+                }
+
+                a:hover {
+                    background-color: #7965c9;
                 }
             }
         }

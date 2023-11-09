@@ -14,11 +14,68 @@
             <h2>Coming Soon...</h2>
             <a href="/card">View My Card</a>
         </div>
+        <div class="scroll-container">
+            <div class="scroll">
+                <div>
+                    <span>Web Design</span>
+                    <span>*</span>
+                    <span>Web Development</span>
+                    <span>*</span>
+                    <span>UI/UX</span>
+                    <span>*</span>
+                </div>
+                <div>
+                    <span>Web Design</span>
+                    <span>*</span>
+                    <span>Web Development</span>
+                    <span>*</span>
+                    <span>UI/UX</span>
+                    <span>*</span>
+                </div>
+            </div>
+            <div class="scroll">
+                <div>
+                    <span>Illustration</span>
+                    <span>*</span>
+                    <span>Logos</span>
+                    <span>*</span>
+                    <span>Graphic Design</span>
+                    <span>*</span>
+                </div>
+                <div>
+                    <span>Illustration</span>
+                    <span>*</span>
+                    <span>Logos</span>
+                    <span>*</span>
+                    <span>Graphic Design</span>
+                    <span>*</span>
+                </div>
+            </div>
+            <div class="scroll">
+                <div>
+                    <span>Character Design</span>
+                    <span>*</span>
+                    <span>3D Modeling</span>
+                    <span>*</span>
+                    <span>Content Creation</span>
+                    <span>*</span>
+                </div>
+                <div>
+                    <span>Character Design</span>
+                    <span>*</span>
+                    <span>3D Modeling</span>
+                    <span>*</span>
+                    <span>Content Creation</span>
+                    <span>*</span>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Unna&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500;700&display=swap');
 
     // Temp Stuff
     .Temp {
@@ -29,6 +86,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        z-index: 1;
 
         .TempFloofyLogo {
             width: 30%;
@@ -68,5 +126,36 @@
     .hidden {
         position: absolute;
         top: -1000px;
+    }
+
+    //Scroll
+    .scroll-container {
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        z-index: -1;
+
+            .scroll div {
+            display: inline-block;
+            animation: 20s scroll linear infinite;
+
+            span {
+                font-family: 'Inknut Antiqua', serif;
+                color: #505458;
+                font-size: 20vh;
+                display: inline-flex;
+                margin: 10px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        } to {
+            transform: translateX(-100%);
+        }
     }
 </style>
