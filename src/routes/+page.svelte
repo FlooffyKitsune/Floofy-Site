@@ -17,6 +17,7 @@ function showPopup() {
     <img src={FloofyLogo} alt="Floofy Logo">
     <div class="nav-wrapper">
         <a href="/card">My Card</a>
+        <!-- svelte-ignore a11y-invalid-attribute -->
         <a href="javascript:void(0);" on:click={showPopup}>Request a Page</a>
     </div>
 </header>
@@ -36,7 +37,7 @@ function showPopup() {
             <li><p>Complete Coloso Courses</p><MdiProgressHelper style="font-size: 2.5rem; color: white"/></li>
             <li><p>Learn to Animate (3D)</p><MdiProgressHelper style="font-size: 2.5rem; color: white"/></li>
             <li><p>Launch a YouTube Channel</p><MdiProgressHelper style="font-size: 2.5rem; color: white"/></li>
-            <li><p>Publish Works on Twitter and Portfolio Consistently</p><MdiProgressHelper style="font-size: 2.5rem; color: white"/></li>
+            <li><p>Publish Works</p><MdiProgressHelper style="font-size: 2.5rem; color: white"/></li>
         </ul>
     </div>
 </main>
@@ -62,11 +63,6 @@ function showPopup() {
     * {
         padding: 0;
         margin: 0;
-    }
-
-    .hidden {
-        position: absolute;
-        top: -1000px;
     }
 
     header {
@@ -173,6 +169,126 @@ function showPopup() {
                     color: white;
                     font-weight: 700;
                     font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1262px) {
+        .landing-container {
+            flex-direction: column;
+            height: 35rem;
+            padding: 2rem;
+
+            .landing-text {
+                margin: 2rem 0;
+                padding: 2rem;
+                margin-right: 0;
+                width: 80%;
+            }
+
+            .landing-mascot {
+                display: none;
+            }
+        }
+
+        .goals {
+            margin: 2rem 0 2rem 2rem;
+            padding: 2rem 0 2rem 2rem;
+
+            h2 {
+                font-family: "Nostromo Outline", sans-serif;
+                color: white;
+                font-size: 5rem;
+            }
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    background-image: linear-gradient(to right, #845ec2, #dcb0ff);
+                    border-radius: 60px 0 0 60px;
+                    margin: 1rem 0 3rem 1rem;
+                    padding: 2rem 3.5rem 2rem 5rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        font-family: "Nostromo", sans-serif;
+                        color: white;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 772px) {
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            background-color: #23272A;
+
+            img {
+                width: 10%;
+            }
+
+            .nav-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                a {
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 1.5rem;
+                    color: white;
+                    text-decoration: none;
+                    margin: 0.25rem 0;
+                    border: 3px solid white;
+                    border-radius: 50px;
+                    padding: 0.25rem 1rem;
+                    transition: background-color 0.3s, color 0.3s;
+                }
+
+                a:hover {
+                    background-color: white;
+                    color: #23272A;
+                }
+            }
+
+            img {
+                display: none;
+            }
+        }
+        .landing-container {
+            height: 100%;
+            padding: 2rem;
+
+            .landing-text {
+                margin: 2rem 0;
+                padding: 2rem;
+                margin-right: 0;
+                width: 80%;
+            }
+
+            .landing-mascot {
+                display: none;
+            }
+        }
+
+        .goals {
+            ul li {
+                flex-direction: row-reverse;
+                justify-content: start;
+
+                p {
+                    font-size: 12px;
+                    padding-left: 5px;
                 }
             }
         }
