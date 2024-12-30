@@ -1,6 +1,9 @@
 <script lang="ts">
 import MdiProgressHelper from '~icons/mdi/progress-helper';
 
+import FloofyLogo from '$lib/images/svg/FloofyLogoSmall.svg';
+import FloofyMascot from '$lib/images/floofy-mascot.png';
+
 function showPopup() {
     alert("Message wafflecat on discord for your own page.");
 }
@@ -11,7 +14,7 @@ function showPopup() {
 </svelt:head>
 
 <header>
-    <img src="./images/svg/FloofyLogoSmall.svg" alt="Floofy Logo">
+    <img src={FloofyLogo} alt="Floofy Logo">
     <div class="nav-wrapper">
         <a href="/card">My Card</a>
         <a href="javascript:void(0);" on:click={showPopup}>Request a Page</a>
@@ -25,7 +28,7 @@ function showPopup() {
             <p>In 2024 I met most of my goals. Problem is, I have nothing to show for it. This year I want to change that by having a clear path/plan and something to show for each accomplishment. That's where this site comes in. Below is a list of goals that I can only add to, not delete items from. In addition, there is a showcase section below that where items that meet my goals will be displayed.</p>
             <p>Just for fun I am adding the option for you to have a page on this site as well to track your own progress, too. For the moment it will be manually maintained by me until I figure out a better automated method.</p>
         </div>
-        <img src="./images/floofy-mascot.png" alt="Floofy Mascot" class="landing-mascot">
+        <img src={FloofyMascot} alt="Floofy Mascot" class="landing-mascot">
     </div>
     <div class="goals">
         <h2>Goals</h2>

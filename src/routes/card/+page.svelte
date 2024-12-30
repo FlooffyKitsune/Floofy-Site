@@ -6,6 +6,10 @@
     import FaHeart from '~icons/fa/heart';
     import SiKofi from '~icons/simple-icons/kofi';
     import SiDiscord from '~icons/simple-icons/discord'
+
+    import FloofyLogo from '$lib/images/svg/FloofyLogo.svg';
+    import WaffleCat from '$lib/images/wafflecat.png';
+    import Floofy from '$lib/images/floofy.png';
 </script>
 
 <main>
@@ -14,14 +18,14 @@
         <div class="card-container">
             <div class="card">
                 <div class="card-content">
-                    <img src="./images/svg/FloofyLogo.svg"  class="FloofyLogo" alt="Floofy Logo" />
+                    <img src={FloofyLogo}  class="FloofyLogo" alt="Floofy Logo" />
                     <div class="card-profiles">
                     <div class="card-profile">
-                        <img src="./images/wafflecat.png" class="profile-pic" alt="WaffleCat Profile Pic" />
+                        <img src={WaffleCat} class="profile-pic" alt="WaffleCat Profile Pic" />
                         <p class="profile-desc">WaffleCat</p>
                     </div>
                     <div class="card-profile">
-                        <img src="./images/floofy.png" class="profile-pic" alt="Floofy Profile Pic" />
+                        <img src={Floofy} class="profile-pic" alt="Floofy Profile Pic" />
                         <p class="profile-desc">FloofyKitsune</p>
                     </div>
                     </div>
