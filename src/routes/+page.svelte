@@ -1,12 +1,12 @@
 <script lang="ts">
-import MdiProgressHelper from '~icons/mdi/progress-helper';
+    import MdiProgressHelper from '~icons/mdi/progress-helper';
 
-import FloofyLogo from '$lib/images/svg/FloofyLogoSmall.svg';
-import FloofyMascot from '$lib/images/floofy-mascot.png';
+    import FloofyLogo from '$lib/images/svg/FloofyLogoSmall.svg';
+    import FloofyMascot from '$lib/images/floofy-mascot.png';
 
-function showPopup() {
-    alert("Message wafflecat on discord for your own page.");
-}
+    function showPopup() {
+        alert("Message wafflecat on discord for your own page.");
+    }
 </script>
 
 <svelt:head>
